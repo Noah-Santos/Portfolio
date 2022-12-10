@@ -1,0 +1,16 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+}
+navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00105E;
+    font-size: 100%;
+}
+#myPhoto{
+    border-radius: 50%;
+    width: 10%;
+}
