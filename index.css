@@ -1,17 +1,61 @@
+/* makes body fit to entire page and makes the format side by side */
 body{
     margin: 0%;
     padding: 0%;
-}
-navbar {
     display: flex;
-    width: 10vw;
+    flex-direction: row;
+}
+/* sets nav size and positions elements inside of the nav */
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
     height: 100vh;
-    background-color: #00105E;
-    font-size: 100%;
+    background-color: #001244;
+    justify-content: space-around;
     align-items: center;
 }
+/* resizes my photo into a circle */
 #myPhoto{
+    margin-top: 5%;
     border-radius: 50%;
-    width: 8vw;
-    height: 8vh;
+    width: 10vw;
+    height: 20vh;
+}
+/* changes the buttons in the nav to look like they blend in */
+.navButton{
+    font-size: 150%;
+    background-color: #001244;
+    border: none;
+    color: white;
+}
+/* changes color of buttons in nav when hovered on */
+button:hover{
+    background-color: grey;
+    /* padding: 5%; */
+    border-radius: 15%;
+}
+/* creates body of the content on each page */
+article{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* background-color: #020611; */
+    /* background-color: #020D2C; */
+    background-color: #2F2F2F;
+}
+/* creates the title in each of the content sections */
+.title{
+    text-align: center;
+    font-size: 200%;
+}
+/* sets all text color to white */
+*{
+    color:white;
+}
+/* creates a flexbox container for all of the projects */
+.projectFlexbox{
+    display: flex;
+    flex-direction: row;
 }
