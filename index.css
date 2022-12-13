@@ -55,12 +55,23 @@ article{
     font-family: 'Times New Roman', Times, serif;
     color:white;
 }
+/* creates slideshow format */
+.slideshow{
+    display: flex;
+    flex-direction: row;
+}
+/* changing width of items */
+.item{
+    width: 50%;
+    margin: 2%;
+}
 /* creates a flexbox container for all of the projects */
 .projectFlexbox{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 150%;
     justify-content: space-evenly;
+    /* flex-wrap: wrap; */
 }
 /* sets the proportions of the photo */
 .projectPhoto{
@@ -73,12 +84,11 @@ article{
 }
 /* changes the position of the text, so it's under the images */
 .description{
-    display: flex;
     position: relative;
-    top: -12rem;
+    /* top: -12rem; */
     opacity: 0;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     font-size: 75%;
     /* makes text not appear until on hover is activated */
     display: none;
@@ -98,8 +108,14 @@ article{
 /* makes it so that the a tags have no underline */
 .projectInd{
     text-decoration: none;
+    display: flex;
+    align-items: stretch;
 }
 /* container for single project and puts space between different projects */
 .singleProjectHolder{
     margin: .5%;
+    /* width: calc(100%/4); */
+}
+a{
+    border: 1px solid black;
 }
