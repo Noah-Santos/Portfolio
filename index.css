@@ -14,11 +14,14 @@ nav{
     background-color: #001244;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0%
 }
 /* resizes my photo into a circle */
 #myPhoto{
-    margin-top: 5%;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
     width: 10vw;
     height: 20vh;
 }
@@ -38,8 +41,6 @@ button:hover{
 /* creates body of the content on each page */
 article{
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     /* background-color: #020611; */
     /* background-color: #020D2C; */
@@ -58,4 +59,45 @@ article{
 .projectFlexbox{
     display: flex;
     flex-direction: row;
+    font-size: 150%;
+    justify-content: space-evenly;
+}
+/* sets the proportions of the photo */
+.projectPhoto{
+    opacity: 1;
+    width: 90vw;
+}
+/* changes opacity of image on hover */
+.singleProjectHolder:hover .projectPhoto{
+    opacity: .3;
+}
+/* changes the position of the text, so it's under the images */
+.description{
+    display: flex;
+    position: relative;
+    /* top: -15rem; */
+    opacity: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 75%;
+    
+}
+/* changes opacity of text so it shows on hover */
+.singleProjectHolder:hover .description{
+    opacity: 1;
+}
+/* width of the project images */
+.photo{
+    border-radius: 10%;
+    width: 100%;
+}
+/* makes it so that the a tags have no underline */
+.projectInd{
+    text-decoration: none;
+}
+.singleProjectHolder{
+    margin: .5%;
+}
+h4{
+    display: block;
 }
