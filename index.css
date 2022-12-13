@@ -80,12 +80,14 @@ article{
     text-align: center;
     align-items: center;
     font-size: 75%;
+    /* makes text not appear until on hover is activated */
     display: none;
     
 }
 /* changes opacity of text so it shows on hover */
 .singleProjectHolder:hover .description{
     opacity: 1;
+    /* makes the text display on hover */
     display: block;
 }
 /* width of the project images */
