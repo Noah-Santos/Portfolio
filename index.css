@@ -23,7 +23,6 @@ nav{
     object-fit: cover;
     object-position: top;
     width: 10vw;
-    height: 20vh;
 }
 /* changes the buttons in the nav to look like they blend in */
 .navButton{
@@ -53,6 +52,7 @@ article{
 }
 /* sets all text color to white */
 *{
+    font-family: 'Times New Roman', Times, serif;
     color:white;
 }
 /* creates a flexbox container for all of the projects */
@@ -75,16 +75,18 @@ article{
 .description{
     display: flex;
     position: relative;
-    /* top: -15rem; */
+    top: -12rem;
     opacity: 0;
     text-align: center;
     align-items: center;
     font-size: 75%;
+    display: none;
     
 }
 /* changes opacity of text so it shows on hover */
 .singleProjectHolder:hover .description{
     opacity: 1;
+    display: block;
 }
 /* width of the project images */
 .photo{
@@ -95,9 +97,7 @@ article{
 .projectInd{
     text-decoration: none;
 }
+/* container for single project and puts space between different projects */
 .singleProjectHolder{
     margin: .5%;
-}
-h4{
-    display: block;
 }
