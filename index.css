@@ -68,7 +68,7 @@ article{
 /* creates a flexbox container for all of the projects */
 .projectFlexbox{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 150%;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
@@ -114,8 +114,8 @@ article{
 /* container for single project and puts space between different projects */
 .singleProjectHolder{
     margin: .5%;
-    /* width: calc(100%/4); */
+    width: calc(100%/3);
 }
-a{
+/* a{
     border: 1px solid black;
-}
+} */
