@@ -55,10 +55,14 @@ article{
     font-family: 'Times New Roman', Times, serif;
     color:white;
 }
+
+/* projects */
+
 /* creates slideshow format */
 .slideshow{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 /* changing width of items */
 .item{
@@ -85,7 +89,7 @@ article{
 /* changes the position of the text, so it's under the images */
 .description{
     position: relative;
-    /* top: -12rem; */
+    top: -12rem;
     opacity: 0;
     text-align: center;
     align-items: flex-start;
@@ -116,6 +120,45 @@ article{
     margin: .5%;
     width: calc(100%/3);
 }
-/* a{
+
+/* resume */
+
+/* creates the flexbox for the about me page */
+.resumeFlex{
+    display: flex;
+    flex-direction: column;
+    /* width: calc(100%/3); */
+}
+/* adds the subsections of article */
+.resum{
+    text-decoration: underline;
+    font-size: 150%;
+}
+/* makes changes to one section of the resume */
+.singleSection{
     border: 1px solid black;
-} */
+    text-align: center;
+}
+/* resizes the java certificaton photo */
+#certification{
+    width: 15vw;
+}
+/* sets flex direction to row */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+/* about page */
+
+/* creates title for about me page */
+.aboutTitle{
+    text-decoration: underline;
+    text-align: center;
+}
+/* flexbox for about me page */
+.aboutFlex{
+    display: flex;
+    flex-direction: column;
+}
