@@ -41,11 +41,10 @@ button:hover{
 /* creates body of the content on each page */
 article{
     /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     width: 100%;
-    margin: 0%;
-    padding: 0%;
-    /* background-color: #020611; */
-    /* background-color: #020D2C; */
     background-color: #1F1F1F;
     
 }
@@ -66,14 +65,18 @@ article{
     flex-direction: row;
 }
 /* sets flex direction to column */
-.row{
+.col{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
-/* centers the text vertically */
+/* centers the text horizontally */
 .center{
     text-align: center;
+}
+/* centers the text vertically */
+.centerV{
+    align-items: center;
 }
 
 /* ---------------------------------------- projects ---------------------------------------- */
@@ -110,21 +113,23 @@ article{
 }
 /* changes the position of the text, so it's under the images */
 .description{
-    position: relative;
-    top: -12rem;
+    display: flex;
+    /* position: relative;
+    top: -12rem; */
     opacity: 0;
-    text-align: center;
-    align-items: flex-start;
     font-size: 75%;
     /* makes text not appear until on hover is activated */
     display: none;
-    
+    text-align: center;
+    /* fixes problem of hovering causing block beneath to show by hiding a div under the image */
+    position: absolute;
+    top: 20%;
 }
 /* changes opacity of text so it shows on hover */
 .singleProjectHolder:hover .description{
     opacity: 1;
     /* makes the text display on hover */
-    display: block;
+    display: inline;
 }
 /* width of the project images */
 .photo{
@@ -141,6 +146,13 @@ article{
 .singleProjectHolder{
     margin: .5%;
     width: calc(100%/3);
+    position: relative;
+}
+/* makes title of hover description bigger */
+.big{
+    font-size: 150%;
+    font-weight: bold;
+    padding-bottom: 2%;
 }
 
 /* ---------------------------------------- resume ---------------------------------------- */
@@ -165,8 +177,13 @@ article{
     margin: 5%;
 }
 /* resizes the java certificaton photo */
-#certification{
-    width: 15vw;
+.certification{
+    width: 10vw;
+}
+/* sets image to a square */
+.square{
+    height: 20vh;
+    width: auto;
 }
 
 /* ---------------------------------------- about page ---------------------------------------- */
