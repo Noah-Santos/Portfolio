@@ -163,6 +163,7 @@ article{
     flex-direction: row;
     justify-content: space-evenly;
     height: 74vh;
+    align-items: center;
     /* width: calc(100%/3); */
 }
 /* adds the subsections of article */
@@ -200,7 +201,7 @@ article{
     text-decoration: underline;
     text-align: center;
 }
-/* makes col for the about flexox and spaces them accordingly */
+/* makes col for the about flexbox and spaces them accordingly */
 .colAbout{
     display: flex;
     align-content: space-evenly;
@@ -215,6 +216,7 @@ article{
 }
 
 /* ---------------------------------------- media query ---------------------------------------- */
+/* for the media queries, try changing the flex direction to make it one item per row */
 /* changes nav buttons to icons instead of text */
 @media (max-width: 690px){
 
