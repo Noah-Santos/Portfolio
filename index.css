@@ -59,8 +59,24 @@ article{
     font-family: 'Times New Roman', Times, serif;
     color:white;
 }
+/* sets flex direction to row */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+/* sets flex direction to column */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/* centers the text vertically */
+.center{
+    text-align: center;
+}
 
-/* projects */
+/* ---------------------------------------- projects ---------------------------------------- */
 
 /* creates slideshow format */
 .slideshow{
@@ -127,12 +143,14 @@ article{
     width: calc(100%/3);
 }
 
-/* resume */
+/* ---------------------------------------- resume ---------------------------------------- */
 
 /* creates the flexbox for the about me page */
 .resumeFlex{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 74vh;
     /* width: calc(100%/3); */
 }
 /* adds the subsections of article */
@@ -144,28 +162,47 @@ article{
 .singleSection{
     border: 1px solid black;
     text-align: center;
+    margin: 5%;
 }
 /* resizes the java certificaton photo */
 #certification{
     width: 15vw;
 }
-/* sets flex direction to row */
-.row{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
 
-/* about page */
+/* ---------------------------------------- about page ---------------------------------------- */
 
 /* flexbox for about me page */
 .aboutFlex{
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: row;
+    height: 74vh;
+    justify-content: space-evenly;
 }
 /* Creates the about page headers */
 .aboutTitle{
     text-decoration: underline;
     text-align: center;
+}
+/* makes col for the about flexox and spaces them accordingly */
+.colAbout{
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: column;
+    height: 80%;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+/* modifying each indivisual item's maring */
+.aboutItem{
+    margin: 3%;
+}
+
+/* ---------------------------------------- media query ---------------------------------------- */
+/* changes nav buttons to icons instead of text */
+@media (max-width: 690px){
+
+}
+/* changes about page to be one item per row */
+@media (max-width: 575px){
+
 }

@@ -3,52 +3,52 @@ let projects = ["https://noah-santos.github.io/Convertion-Project/", "https://no
 let images = ["convertionProject.PNG", "littlemissmiaProject.PNG", "tictactoe.PNG"];
 let i = 0;
 let direction="none";
-// move the slides forward
-function slideIncrease(){
+// // move the slides forward
+// function slideIncrease(){
     
-    if(direction=="none"){
-        i++;
-    }else if(direction=="left"){
-        i++;
-        if(0<=i<=2){
-            i=0;
-        }
-    }
-    direction="right";
-    document.getElementById("item1").href=projects[i];
-    document.getElementById("img1").src=images[i];
-    //sets the index to -1, so that the image will be the first one in the array
-    if(i==images.length-1){
-        i = -1;
-    }
-    document.getElementById("item2").href=projects[i+1];
-    document.getElementById("img2").src=images[i+1];
-    i++;
-}
-//moves the slides back
-function slideDecrease(){
+//     if(direction=="none"){
+//         i++;
+//     }else if(direction=="left"){
+//         i++;
+//         if(0<=i<=2){
+//             i=0;
+//         }
+//     }
+//     direction="right";
+//     document.getElementById("item1").href=projects[i];
+//     document.getElementById("img1").src=images[i];
+//     //sets the index to -1, so that the image will be the first one in the array
+//     if(i==images.length-1){
+//         i = -1;
+//     }
+//     document.getElementById("item2").href=projects[i+1];
+//     document.getElementById("img2").src=images[i+1];
+//     i++;
+// }
+// //moves the slides back
+// function slideDecrease(){
     
-    if(direction=="right"){
-        i-=2;
-    }else{
-        i--;
-    }
-    direction="left";
-    // i--;
-    //sets the index to 3, so that the image will be the last one in the array
-    if(i<=-1){
-        i = 2;
-    }
-    document.getElementById("item1").href=projects[i];
-    document.getElementById("img1").src=images[i];
-    if(i == images.length-1){
-        document.getElementById("item2").href=projects[i-2];
-        document.getElementById("img2").src=images[i-2];
-    }else{
-        document.getElementById("item2").href=projects[i+1];
-        document.getElementById("img2").src=images[i+1];
-    }
-}
+//     if(direction=="right"){
+//         i-=2;
+//     }else{
+//         i--;
+//     }
+//     direction="left";
+//     // i--;
+//     //sets the index to 3, so that the image will be the last one in the array
+//     if(i<=-1){
+//         i = 2;
+//     }
+//     document.getElementById("item1").href=projects[i];
+//     document.getElementById("img1").src=images[i];
+//     if(i == images.length-1){
+//         document.getElementById("item2").href=projects[i-2];
+//         document.getElementById("img2").src=images[i-2];
+//     }else{
+//         document.getElementById("item2").href=projects[i+1];
+//         document.getElementById("img2").src=images[i+1];
+//     }
+// }
 
 // function change(direction){
 //     if(direction == "right"){
@@ -72,3 +72,6 @@ function slideDecrease(){
 
 //     }
 // }
+
+// try something where everytime button is clicked, I grab the current href of the a tag and check what item in list it is in array and then add or sutract one from index depeinding on which button is clicked
+// check to see if it can be reduced or increased, if not, reset the value of the index accordingly
