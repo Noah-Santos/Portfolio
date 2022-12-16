@@ -1,0 +1,34 @@
+/* creates the flexbox for the about me page */
+.resumeFlex {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    height: 74vh;
+    /* align-items: center; */
+    border: 1px solid white;
+}
+
+/* adds the subsections of article */
+.resum {
+    text-decoration: underline;
+    font-size: 150%;
+}
+
+/* makes changes to one section of the resume */
+.singleSection {
+    border: 1px solid black;
+    text-align: center;
+    /* margin: 5%; */
+    width: 100%;
+}
+
+/* resizes the java certificaton photo */
+.certification {
+    width: 10vw;
+}
+
+/* sets image to a square */
+.square {
+    height: 20vh;
+    width: auto;
+}

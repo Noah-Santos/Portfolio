@@ -3,7 +3,6 @@ body{
     margin: 0%;
     padding: 0%;
     display: flex;
-    /* flex-direction: row; */
     flex-direction: column;
 }
 /* sets nav size and positions elements inside of the nav */
@@ -35,18 +34,14 @@ nav{
 /* changes color of buttons in nav when hovered on */
 button:hover{
     background-color: grey;
-    /* padding: 5%; */
     border-radius: 15%;
 }
 /* creates body of the content on each page */
 article{
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100%;
     background-color: #1F1F1F;
-    
 }
 /* creates the title in each of the content sections */
 .title{
@@ -88,7 +83,7 @@ article{
     align-items: center;
     width: 100%;
 }
-/* changing width of items */
+/* changing width of items in slideshow */
 .item{
     width: 50%;
     margin: 2%;
@@ -99,7 +94,6 @@ article{
     flex-direction: row;
     font-size: 150%;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
     width: 100%;
 }
 /* sets the proportions of the photo */
@@ -114,8 +108,6 @@ article{
 /* changes the position of the text, so it's under the images */
 .description{
     display: flex;
-    /* position: relative;
-    top: -12rem; */
     opacity: 0;
     font-size: 75%;
     /* makes text not appear until on hover is activated */
@@ -157,34 +149,42 @@ article{
 
 /* ---------------------------------------- resume ---------------------------------------- */
 
-/* creates the flexbox for the about me page */
+/* creates flexbox for the resume */
 .resumeFlex{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 74vh;
+    width: 75%;
+    text-align: center;
+    border: 1px solid white;
+    /* centers the div */
+    margin: auto;
+}
+/* creates column */
+.resumeCol{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 1%;
     align-items: center;
-    /* width: calc(100%/3); */
+}
+/* creates a row for resume */
+.resumeRow{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+}
+/* creates growth for on of the columns */
+.grow{
+    flex-grow: 3;
 }
 /* adds the subsections of article */
-.resum{
+.resum {
     text-decoration: underline;
     font-size: 150%;
 }
-/* makes changes to one section of the resume */
-.singleSection{
-    border: 1px solid black;
-    text-align: center;
-    margin: 5%;
-}
-/* resizes the java certificaton photo */
-.certification{
-    width: 10vw;
-}
-/* sets image to a square */
-.square{
-    height: 20vh;
-    width: auto;
+/* resize certificate images */
+.certificate{
+    width: 65%;
 }
 
 /* ---------------------------------------- about page ---------------------------------------- */
