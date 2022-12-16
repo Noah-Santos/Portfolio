@@ -17,12 +17,15 @@ nav{
     position: sticky;
     top: 0%;
 }
+/* changes color of text in buttons */
+button{
+    color: #1F1F1F;
+}
 /* resizes my photo into a circle */
-#myPhoto{
+.myPhoto{
     border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-    width: 8vw;
+    width: 8%;
+    height: auto;
 }
 /* changes the buttons in the nav to look like they blend in */
 .navButton{
@@ -155,15 +158,16 @@ article{
     flex-direction: row;
     width: 75%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* centers the div */
     margin: auto;
+    margin-bottom: 1%;
 }
 /* creates column */
 .resumeCol{
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 1%;
     align-items: center;
 }
@@ -171,7 +175,9 @@ article{
 .resumeRow{
     display: flex;
     flex-direction: row;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: space-around;
 }
 /* creates growth for on of the columns */
 .grow{
@@ -185,6 +191,10 @@ article{
 /* resize certificate images */
 .certificate{
     width: 65%;
+}
+/* adds border to specfic elements */
+.border{
+    border: 1px solid white;
 }
 
 /* ---------------------------------------- about page ---------------------------------------- */

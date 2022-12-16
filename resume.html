@@ -17,7 +17,7 @@
     <script src="./index.js"></script>
     <!-- creates nav with my photo and links to the other pages -->
     <nav>
-        <img src="Portfolio Picture.jpg" alt="myPhoto" id="myPhoto">
+        <img src="./images/Portfolio Picture.jpg" alt="myPhoto" class="myPhoto">
         <a href="./index.html">
             <button class="navButton">About</button>
         </a>
@@ -36,7 +36,7 @@
     <article>
         <h1 class="title">Resume</h1>
         <div class="resumeFlex">
-            <div class="resumeCol">
+            <div class="resumeCol border">
                 <div>
                     <h3 class="resum">Education</h3>
                     <p>Sandra Day O'Connor High School Student</p>
@@ -70,18 +70,24 @@
                     <p>Work Ethic</p>
                 </div>
             </div>
-            <div class="resumeCol grow">
+            <div class="resumeCol grow border">
                 <div>
                     <h3 class="resum">Certification/Awards</h3>
-                    <div class="resumeRow">
+                    <div class="resumeRow border">
                         <div class="resumeCol around">
                             <p>Java Certification</p>
                             <p>Technical Skills</p>
                             <p>Congressional App Challenge</p>
                             <p>ITS 301 HTML/CSS (in progress)</p>
                         </div>
-                        <div class="resumeCol">
-                            <img src="./it-specialist-java.png" alt="certification" class="certificate">
+                        <div class="resumeRow border">
+                            <div>
+                                <button><</button>
+                            </div>
+                            <img src="./images/it-specialist-java.png" alt="certification" class="certificate">
+                            <div>
+                                <button>></button>
+                            </div>
                         </div>
                     </div>
                 </div>
