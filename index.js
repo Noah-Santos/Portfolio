@@ -26,7 +26,20 @@ function resumeChange(direction){
                 }else{
                     i--;
                     index.src=certificateArray[i];
-                    console.log("minus")
+                    console.log("minus")   
+                    break;
+                }
+                
+            }else if(direction=="right"){
+                if(i==certificateArray.length-1){
+                    i=0;
+                    index.src=certificateArray[i];
+                    console.log('first')
+                    break;
+                }else{
+                    i++;
+                    index.src=certificateArray[i];
+                    console.log("minplusus")   
                     break;
                 }
                 

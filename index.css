@@ -4,6 +4,8 @@ body{
     padding: 0%;
     display: flex;
     flex-direction: column;
+    border: 1px solid blue;
+    background-color: #1F1F1F;
 }
 /* sets nav size and positions elements inside of the nav */
 nav{
@@ -192,7 +194,7 @@ article{
 }
 /* resize certificate images */
 .certificate{
-    width: 65%;
+    width: 25vw;
 }
 /* adds border to specfic elements */
 .border{
@@ -219,7 +221,7 @@ article{
     align-content: space-evenly;
     flex-direction: column;
     height: 80%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     flex-grow: 1;
 }
 /* modifying each indivisual item's maring */
@@ -240,10 +242,12 @@ article{
 }
 /* bolds the text for contact name */
 .contact{
-    font-size: 150%;
     font-weight: bold;
 }
-/* created the  */
+/* resizes contact onfor to same size  */
+.info{
+    font-size: 150%;
+}
 
 /* ---------------------------------------- media query ---------------------------------------- */
 /* for the media queries, try changing the flex direction to make it one item per row */
