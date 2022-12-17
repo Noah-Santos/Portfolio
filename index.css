@@ -17,12 +17,17 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 15%;
+    height: 25%;
     background-color: #3C315E;
     justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0%;
+    z-index: 6;
+}
+/* makes nav images invisible */
+.navImg{
+    display: none;
 }
 /* formats the footer */
 footer{
@@ -64,7 +69,7 @@ article{
     width: 100%;
     background-color: #1F1F1F;
     align-items: stretch;
-    height: 75%;
+    height: 65%;
 }
 /* creates the title in each of the content sections */
 .title{
@@ -118,6 +123,8 @@ article{
     font-size: 150%;
     justify-content: space-evenly;
     width: 100%;
+    /* set it behind the nav bar on smaller devices */
+    z-index: 1;
 }
 /* sets the proportions of the photo */
 .projectPhoto{
@@ -226,6 +233,7 @@ article{
     height: 100%;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 /* Creates the about page headers */
 .aboutTitle{
@@ -257,7 +265,7 @@ article{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 100%;
     width: 75%;
     margin: auto;
@@ -276,9 +284,61 @@ article{
 /* for the media queries, try changing the flex direction to make it one item per row */
 /* changes nav buttons to icons instead of text */
 @media (max-width: 690px){
-
+    /* hids nav buttons */
+    .navButton{
+        display: none;
+    }
+    /* shows nav buttons */
+    .navImg{
+        display: block;
+        width: 50%;
+    }
+    /* modifies about page */
+    .aboutFlex{
+        align-items: center;
+    }
+    /* resizes my photo */
+    .myPhoto{
+        width: 15%;
+        margin: 2%;
+        margin-right: 9%;
+    }
 }
 /* changes about page to be one item per row */
 @media (max-width: 575px){
-
+    /* sets about flex to column */
+    .aboutFlex{
+        flex-direction: column;
+    }
+    /* modifies picture on about page */
+    .picOfMe{
+        width: 40%;
+    }
+    /* changes project flexbox to column */
+    .projectFlexbox{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* changes the size of the proejcts */
+    .singleProjectHolder{
+        width: 75%;
+        margin: 2%;
+    }
+    /* changes resume flexbox to reverse-column */
+    .resumeFlex{
+        flex-direction: column-reverse;
+    }
+    .resumeRow{
+        flex-direction: column-reverse;
+    }
+    /* makes text smaller in contact flexbox */
+    .contactFlex{
+        font-size: 75%;
+    }
+    /* makes the resume slideshow row */
+    #resumeSmall{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
