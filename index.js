@@ -4,7 +4,7 @@
 // array for different certification images
 let certificateArray = ["http://127.0.0.1:5500/images/it-specialist-java.png", "http://127.0.0.1:5500/images/Technical%20Certificate.jpg", "http://127.0.0.1:5500/images/Technical%20Letter%201.jpg", "http://127.0.0.1:5500/images/Technical%20Letter%202.jpg", "http://127.0.0.1:5500/images/App%20Certificate.jpg", "http://127.0.0.1:5500/images/App%20Letter.jpg"];
 let i = 0;
-// slideshow fo rthe resume
+// slideshow for the resume
 function resumeChange(direction){
     let index = document.getElementById("certification");
     // loops through the certificate array
