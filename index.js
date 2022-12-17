@@ -172,6 +172,8 @@ function resumeChange2(direction){
         }
     }
 }
+let c1 = 0;
+let c2 = 0;
 function resumeChange2(direction){
     // gets elements of slideshow
     let img1 = document.getElementById("certification1");
@@ -180,61 +182,61 @@ function resumeChange2(direction){
     for(let y=0; y<certificateArray.length;y++){
         // finds index of item 1
         if(img1.src == certificateArray[y]){
-            x1 = y;
+            c1 = y;
         } 
     }
     // loops through project array
     for(let y=0; y<certificateArray.length;y++){
         // finds index of item 2
         if(img2.src == certificateArray[y]){
-            x2 = y;
+            c2 = y;
         }
     }
     // if direction is left
     if(direction == "left"){
         // if index of item 1 is 0, change index 1 to max index of array
         // index 2 is reduced by 1
-        if(x1 == 0){
-            x1=certificateArray.length-1;
-            x2--;
-            img1.src = certificateArray[x1];
-            img2.src = certificateArray[x2];
+        if(c1 == 0){
+            c1=certificateArray.length-1;
+            c2--;
+            img1.src = certificateArray[c1];
+            img2.src = certificateArray[c2];
         // index 1 is reduced by 1
         // index of item 2 is 0, change index 1 to max index of array
-        }else if(x2 == 0){
-            x2 = certificateArray.length-1;
-            x1--;
-            img2.src = certificateArray[x2];
-            img1.src = certificateArray[x1];
+        }else if(c2 == 0){
+            c2 = certificateArray.length-1;
+            c1--;
+            img2.src = certificateArray[c2];
+            img1.src = certificateArray[c1];
             // both indexes are reduced by 1
         }else{
-            x1--;
-            x2--;
-            img1.src = certificateArray[x1];
-            img2.src = certificateArray[x2];
+            c1--;
+            c2--;
+            img1.src = certificateArray[c1];
+            img2.src = certificateArray[c2];
         }
     // if direction is right
     }else if(direction == "right"){
         // if index 1 is max index of array, change index 1 to 0
         // index 2 is increased by 1
-        if(x1 == certificateArray.length-1){
-            x1=0;
-            x2++;
-            img1.src = certificateArray[x1];
-            img2.src = certificateArray[x2];
+        if(c1 == certificateArray.length-1){
+            c1=0;
+            c2++;
+            img1.src = certificateArray[c1];
+            img2.src = certificateArray[c2];
         // index 1 is increased by 1
         // if index 2 is max index of array, change index 1 to 0
-        }else if(x2 == certificateArray.length-1){
-            x2 = 0;
-            x1++;
-            img2.src = certificateArray[x2];
-            img1.src = certificateArray[x1];
+        }else if(c2 == certificateArray.length-1){
+            c2 = 0;
+            c1++;
+            img2.src = certificateArray[c2];
+            img1.src = certificateArray[c1];
         // both indexes are increased by 1
         }else{
-            x1++;
-            x2++;
-            img1.src = certificateArray[x1];
-            img2.src = certificateArray[x2];
+            c1++;
+            c2++;
+            img1.src = certificateArray[c1];
+            img2.src = certificateArray[c2];
         }
     }
 }
