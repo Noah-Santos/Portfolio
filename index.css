@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     align-items: stretch;
 }
+/* sets min height of html page */
 html{
     min-height: 100%;
 }
