@@ -1,4 +1,4 @@
-
+"use strict";
 // try something where everytime button is clicked, I grab the current href of the a tag and check what item in list it is in array and then add or sutract one from index depeinding on which button is clicked
 // check to see if it can be reduced or increased, if not, reset the value of the index accordingly
 // array for different certification images
@@ -9,7 +9,7 @@ function resumeChange(direction){
     let index = document.getElementById("certification");
     // loops through the certificate array
     for(let j=0; j<certificateArray.length;j++){
-        console.log(certificateArray[j])
+        // console.log(certificateArray[j])
         // takes the index that the slideshow is currently on 
         if(index.src == certificateArray[j]){
             i = j;
@@ -61,7 +61,7 @@ function changeProject(direction){
     for(let y=0; y<projects.length;y++){
         // finds index of item 1
         if(link1.href == projects[y]){
-            x = y;
+            x1 = y;
         } 
     }
     // loops through project array
@@ -75,28 +75,28 @@ function changeProject(direction){
     if(direction == "left"){
         // if index of item 1 is 0, change index 1 to max index of array
         // index 2 is reduced by 1
-        if(x == 0){
-            x=projects.length-1;
+        if(x1 == 0){
+            x1=projects.length-1;
             x2--;
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
             link2.href = projects[x2];
             img2.src = images[x2];
         // index 1 is reduced by 1
         // index of item 2 is 0, change index 1 to max index of array
         }else if(x2 == 0){
             x2 = projects.length-1;
-            x--;
+            x1--;
             link2.href = projects[x2];
             img2.src = images[x2];
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
             // both indexes are reduced by 1
         }else{
-            x--;
+            x1--;
             x2--;
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
             link2.href = projects[x2];
             img2.src = images[x2];
         }
@@ -104,28 +104,28 @@ function changeProject(direction){
     }else if(direction == "right"){
         // if index 1 is max index of array, change index 1 to 0
         // index 2 is increased by 1
-        if(x == projects.length-1){
-            x=0;
+        if(x1 == projects.length-1){
+            x1=0;
             x2++;
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
             link2.href = projects[x2];
             img2.src = images[x2];
         // index 1 is increased by 1
         // if index 2 is max index of array, change index 1 to 0
         }else if(x2 == projects.length-1){
             x2 = 0;
-            x++;
+            x1++;
             link2.href = projects[x2];
             img2.src = images[x2];
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
         // both indexes are increased by 1
         }else{
-            x++;
+            x1++;
             x2++;
-            link1.href = projects[x];
-            img1.src = images[x];
+            link1.href = projects[x1];
+            img1.src = images[x1];
             link2.href = projects[x2];
             img2.src = images[x2];
         }

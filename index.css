@@ -317,9 +317,9 @@ article{
     /* changes project flexbox to column */
     .projectFlexbox{
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
-    /* changes the size of the proejcts */
+    /* changes the size of the projects */
     .singleProjectHolder{
         width: 75%;
         margin: 2%;
@@ -328,6 +328,7 @@ article{
     .resumeFlex{
         flex-direction: column-reverse;
     }
+    /* changes resume row to reverse-column */
     .resumeRow{
         flex-direction: column-reverse;
     }
