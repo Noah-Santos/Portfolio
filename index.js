@@ -134,44 +134,6 @@ function changeProject(direction){
 
 
 // slideshow fo rthe resume
-function resumeChange2(direction){
-    let index = document.getElementById("certification2");
-    // loops through the certificate array
-    for(let j=0; j<certificateArray.length;j++){
-        // console.log(certificateArray[j])
-        // takes the index that the slideshow is currently on 
-        if(index.src == certificateArray[j]){
-            i = j;
-            // if back button is hit
-            if(direction=="left"){
-                // if at beginning of array, set image to last element
-                if(i==0){
-                    i=certificateArray.length-1;
-                    index.src=certificateArray[i];
-                    break;
-                // go to previous element
-                }else{
-                    i--;
-                    index.src=certificateArray[i];  
-                    break;
-                }
-            // if forward button is hit
-            }else if(direction=="right"){
-                // if at end of array, set image to beginning element
-                if(i==certificateArray.length-1){
-                    i=0;
-                    index.src=certificateArray[i];
-                    break;
-                // go to next element in array
-                }else{
-                    i++;
-                    index.src=certificateArray[i];  
-                    break;
-                }
-            }
-        }
-    }
-}
 let c1 = 0;
 let c2 = 0;
 function resumeChange2(direction){
