@@ -132,8 +132,8 @@ function changeProject(direction){
     }
 }
 
-let cert = ["./images/it-specialist-java.png", "./images/Technical Certificate.jpg", "./images/App Certificate.jpg"]
-// , "./images/Technical Letter 1.jpg", "./images/Technical Letter 2.jpg"
+let cert = ["./images/it-specialist-java.png", "./images/Technical Certificate.jpg", "./images/Technical Letter 1.jpg", "./images/Technical Letter 2.jpg", "./images/App Certificate.jpg", "./images/App Certificate.jpg"]
+
 // slideshow fo rthe resume
 let c1 = 0;
 let c2 = 1;
