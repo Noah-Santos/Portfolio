@@ -284,7 +284,7 @@ article{
 /* ---------------------------------------- media query ---------------------------------------- */
 /* for the media queries, try changing the flex direction to make it one item per row */
 /* changes nav buttons to icons instead of text */
-@media (max-width: 690px){
+@media (max-width: 700px){
     /* hids nav buttons */
     .navButton{
         display: none;
@@ -303,6 +303,20 @@ article{
         width: 15%;
         margin: 2%;
         margin-right: 9%;
+    }
+    /* changes resume flexbox to reverse-column */
+    .resumeFlex{
+        flex-direction: column-reverse;
+    }
+    /* changes resume row to reverse-column */
+    .resumeRow{
+        flex-direction: column-reverse;
+    }
+    /* makes the resume slideshow row */
+    #resumeSmall{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 /* changes about page to be one item per row */
@@ -325,22 +339,8 @@ article{
         width: 75%;
         margin: 2%;
     }
-    /* changes resume flexbox to reverse-column */
-    .resumeFlex{
-        flex-direction: column-reverse;
-    }
-    /* changes resume row to reverse-column */
-    .resumeRow{
-        flex-direction: column-reverse;
-    }
     /* makes text smaller in contact flexbox */
     .contactFlex{
         font-size: 75%;
-    }
-    /* makes the resume slideshow row */
-    #resumeSmall{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 }
