@@ -83,7 +83,7 @@ function changeProject(direction){
             link2.href = projects[x2];
             img2.src = images[x2];
         // index 1 is reduced by 1
-        // index of item 2 is 0, change index 1 to max index of array
+        // index of item 2 is 0, change index 2 to max index of array
         }else if(x2 == 0){
             x2 = projects.length-1;
             x1--;
@@ -112,7 +112,7 @@ function changeProject(direction){
             link2.href = projects[x2];
             img2.src = images[x2];
         // index 1 is increased by 1
-        // if index 2 is max index of array, change index 1 to 0
+        // if index 2 is max index of array, change index 2 to 0
         }else if(x2 == projects.length-1){
             x2 = 0;
             x1++;
@@ -132,26 +132,29 @@ function changeProject(direction){
     }
 }
 
-
+let cert = ["./images/it-specialist-java.png", "./images/Technical Certificate.jpg", "./images/App Certificate.jpg"]
+// , "./images/Technical Letter 1.jpg", "./images/Technical Letter 2.jpg"
 // slideshow fo rthe resume
 let c1 = 0;
-let c2 = 0;
+let c2 = 1;
 function resumeChange2(direction){
     // gets elements of slideshow
     let img1 = document.getElementById("certification1");
     let img2 = document.getElementById("certification2");
     // loops through project array
-    for(let y=0; y<certificateArray.length;y++){
+    for(let y=0; y<cert.length;y++){
         // finds index of item 1
-        if(img1.src == certificateArray[y]){
+        if(img1.src == cert[y]){
             c1 = y;
+            console.log(c1);
         } 
     }
     // loops through project array
-    for(let y=0; y<certificateArray.length;y++){
+    for(let y=0; y<cert.length;y++){
         // finds index of item 2
-        if(img2.src == certificateArray[y]){
+        if(img2.src == cert[y]){
             c2 = y;
+            console.log(c2);
         }
     }
     // if direction is left
@@ -159,46 +162,46 @@ function resumeChange2(direction){
         // if index of item 1 is 0, change index 1 to max index of array
         // index 2 is reduced by 1
         if(c1 == 0){
-            c1=certificateArray.length-1;
+            c1=cert.length-1;
             c2--;
-            img1.src = certificateArray[c1];
-            img2.src = certificateArray[c2];
+            img1.src = cert[c1];
+            img2.src = cert[c2];
         // index 1 is reduced by 1
-        // index of item 2 is 0, change index 1 to max index of array
+        // index of item 2 is 0, change index 2 to max index of array
         }else if(c2 == 0){
-            c2 = certificateArray.length-1;
+            c2 = cert.length-1;
             c1--;
-            img2.src = certificateArray[c2];
-            img1.src = certificateArray[c1];
+            img2.src = cert[c2];
+            img1.src = cert[c1];
             // both indexes are reduced by 1
         }else{
             c1--;
             c2--;
-            img1.src = certificateArray[c1];
-            img2.src = certificateArray[c2];
+            img1.src = cert[c1];
+            img2.src = cert[c2];
         }
     // if direction is right
     }else if(direction == "right"){
         // if index 1 is max index of array, change index 1 to 0
         // index 2 is increased by 1
-        if(c1 == certificateArray.length-1){
+        if(c1 == cert.length-1){
             c1=0;
             c2++;
-            img1.src = certificateArray[c1];
-            img2.src = certificateArray[c2];
+            img1.src = cert[c1];
+            img2.src = cert[c2];
         // index 1 is increased by 1
-        // if index 2 is max index of array, change index 1 to 0
-        }else if(c2 == certificateArray.length-1){
+        // if index 2 is max index of array, change index 2 to 0
+        }else if(c2 == cert.length-1){
             c2 = 0;
             c1++;
-            img2.src = certificateArray[c2];
-            img1.src = certificateArray[c1];
+            img2.src = cert[c2];
+            img1.src = cert[c1];
         // both indexes are increased by 1
         }else{
             c1++;
             c2++;
-            img1.src = certificateArray[c1];
-            img2.src = certificateArray[c2];
+            img1.src = cert[c1];
+            img2.src = cert[c2];
         }
     }
 }
