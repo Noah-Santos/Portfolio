@@ -77,9 +77,9 @@ function resumeChange2(direction){
 }
 
 //array with all project links
-let projects = ["https://noah-santos.github.io/Convertion-Project/", "https://noah-santos.github.io/littlemissmia_personal/", "https://noah-santos.github.io/Tic-Tac-Toe/"];
-let images = ["./images/convertionProject.PNG", "./images/littlemissmiaProject.PNG", "./images/tictactoe.PNG"];
-let newImg = ["http://127.0.0.1:5500/images/convertionProject.PNG", "http://127.0.0.1:5500/images/littlemissmiaProject.PNG", "http://127.0.0.1:5500/images/tictactoe.PNG"];
+let projects = ["https://noah-santos.github.io/conversion-Project/", "https://noah-santos.github.io/littlemissmia_personal/", "https://noah-santos.github.io/Tic-Tac-Toe/"];
+let images = ["./images/conversionProject.PNG", "./images/littlemissmiaProject.PNG", "./images/tictactoe.PNG"];
+let newImg = ["http://127.0.0.1:5500/images/conversionProject.PNG", "http://127.0.0.1:5500/images/littlemissmiaProject.PNG", "http://127.0.0.1:5500/images/tictactoe.PNG"];
 let x1 = 0;
 let x2 = 0;
 
